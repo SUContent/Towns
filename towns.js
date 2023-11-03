@@ -34,7 +34,7 @@ function addTown() {
 
 	$('#towns').append(newOption);
 
-	$('#result-add').text(`${townName} added.`);
+	$('#result').text(`${townName} added.`);
 }
 
 $(document).ready(function () {
