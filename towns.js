@@ -12,8 +12,20 @@ function deleteTown() {
 			option.remove();
 		}
 	}
+
 	if (removed)
 		$('#result').text(townName + " deleted.");
 	else
 		$('#result').text(townName + " not found.");
 }
+
+function addTown() {
+	let townName = $('#towns').val();
+	$('#towns').val('');
+	$('#towns').append($('<option>').text(townName));
+	$('#result').text(townName + " added.");
+}
+
+$(document).ready(function() {
+	$('#btnAdd').click(addTown);
+});
