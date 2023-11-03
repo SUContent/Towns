@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	$('#btnDelete').click(deleteTown)
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 	$('#btnAdd').click(addTown)
 });
 
@@ -26,7 +26,7 @@ function addTown() {
 	let townName = $('#town-name-add').val();
 	$('#town-name-add').val('');
 	let added = false;
-	
+
 	let newOption = $("<option>", {
 		value: townName,
 		text: townName
@@ -34,5 +34,22 @@ function addTown() {
 
 	$('#towns').append(newOption);
 
-	$('#result').text(`${townName} added.`);
+	$('#result-add').text(`${townName} added.`);
 }
+
+$(document).ready(function () {
+	$("#shuffle").on("click", function () {
+		let select = $("#towns");
+		let options = select.find("option");
+
+		for (let i = options.length - 1; i > 0; i--) {
+			let j = Math.floor(Math.random() * (i + 1));
+			let temp = options[i];
+			options[i] = options[j];
+			options[j] = temp;
+		}
+
+		select.empty();
+		select.append(options);
+	});
+});
