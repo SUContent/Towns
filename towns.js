@@ -7,7 +7,7 @@ $(document).ready(function () {
 });
 
 function deleteTown() {
-	let townName = $('#townName').val();
+	let townName = $('#townName').val()
 	$('#townName').val('');
 	let removed = false;
 	for (let option of $('#towns option')) {
