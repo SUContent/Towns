@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	$('#btnShuffle').click(shuffleTowns);
+
 	$('#btnDelete').click(deleteTown)
 });
 
@@ -18,10 +21,12 @@ function deleteTown() {
         showMessage(townName + " not found.");
 }
 
+
 function showMessage(msg) {
     $('#result').text(msg).css("display", "block");
     setTimeout(function () {
         $('#result').hide('blind', {}, 500);
     }, 3000);
 }
+
 
