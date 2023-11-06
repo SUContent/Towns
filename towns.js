@@ -1,5 +1,7 @@
 $(document).ready(function() {
+
 	$('#btnShuffle').click(shuffleTowns);
+
 	$('#btnDelete').click(deleteTown)
 });
 
@@ -20,6 +22,7 @@ function deleteTown() {
 }
 
 
+
 function shuffleTowns() {
 	let towns = $('#towns option').toArray();
 	$('#towns').empty();
@@ -35,4 +38,5 @@ function shuffleTowns() {
 			array[j] = oldElement;
 		}
 	}
+
 }
