@@ -24,7 +24,6 @@ function deleteTown() {
     else
         showMessage(townName + " not found.");
 }
-<<<<<<< HEAD
 
 
 function showMessage(msg) {
@@ -35,11 +34,3 @@ function showMessage(msg) {
 }
 
 
-=======
-function addTown() {
-	let townName = $('#townNameForAdd').val();
-	$('#townNameForAdd').val('');
-	$('#towns').append($('<option>').text(townName));
-	$('#result').text(townName + " added.");
-}
->>>>>>> 2400b9967aebaa8e5a679c8f8417b5315db9e9e0
