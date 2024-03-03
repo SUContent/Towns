@@ -1,2 +1,6 @@
 # Towns for SoftUni
-Code for the Git and GitHub Exercise
+• Stan takes the role "Editor"
+
+• MurtadaAhmed takes the role "Shuffler"
+
+• Viktor takes the role "Styler"
