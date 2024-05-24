@@ -9,6 +9,4 @@ Code for the Git and GitHub Exercise
 
     alexgergovv takes the role "Styler"
 
-    Rhytmz takes the role "Verifier"
-
     Mihail-Avramov takes the role "Team leade"
