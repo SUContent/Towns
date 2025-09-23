@@ -38,6 +38,7 @@ function shuffleTowns() {
 	}
 }
 
+//JS Fundamentals vibes 
 document.addEventListener('DOMContentLoaded', () => addNewTown());
 
 const addNewTown = () => {
