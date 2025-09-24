@@ -1,2 +1,8 @@
-# Towns for SoftUni
-Code for the Git and GitHub Exercise
+
+
+# Roles
+
+- `Yordan` takes the role “Editor”.
+- `Aleksandar` takes the role “Shiffler”.
+- `Mariya` takes the role “Styler”.
+
