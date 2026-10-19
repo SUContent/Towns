@@ -1,29 +1,38 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Towns</title>
-	<link rel="stylesheet" href="towns.css" />
+    <link rel="stylesheet" href="towns.css" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="towns.js"></script>
 </head>
 
 <body>
+    
+<article>
+    <header>Towns</header>
+    <select id="towns" size="4">
+        <option>Sofia</option>
+        <option>Plovdiv</option>
+        <option>Varna</option>
+        <option>Bourgas</option>
+    </select>
 
-<h1>Towns</h1>
-<select id="towns" size="4">
-    <option>Sofia</option>
-    <option>Plovdiv</option>
-    <option>Varna</option>
-    <option>Bourgas</option>
-</select>
+    <div>
+        <button id="btnShuffle">Shuffle</button>
+    </div>
+</article>
 
-<div>
-    <input type="text" id="townName" />
-    <button id="btnDelete">Delete</button>
-</div>
-<div id="result"></div>
 
+    <article>
+        <header>Delete Existing Town</header>
+        <input type="text" id="townName" />
+        <button id="btnDelete">Delete</button>
+    </article>
+
+    <div id="result"></div>
 </body>
 
 </html>
